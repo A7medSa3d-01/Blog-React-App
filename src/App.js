@@ -13,23 +13,23 @@ function App() {
     <Router>
         <Topbar />
       <Routes>
-        <Route exact path="/" element={<HomePage />}>
+        <Route  path="/" element={<HomePage />}>
         </Route>
-        <Route exact path="/Blog-React-App/" element={<HomePage />}>
+        <Route  path="/Blog-React-App/" element={<HomePage />}>
         </Route>
-        <Route exact path="/posts" element={<HomePage />}>
+        <Route  path="/posts" element={<HomePage />}>
         </Route>
-        <Route exact path="/register" element={currentUser ? <HomePage /> : <Register />}>
+        <Route  path="/register" element={currentUser ? <HomePage /> : <Register />}>
         </Route>
-        <Route exact path="/login" element={currentUser ? <HomePage /> : <Login />}>
+        <Route  path="/login" element={currentUser ? <HomePage /> : <Login />}>
         </Route>
-        <Route exact path="/post/:id" element={<Single />}>
+        <Route  path="/post/:id" element={<Single />}>
         </Route>
-        <Route exact path="/write" element={currentUser ? <Write /> : <Login />}>
+        <Route  path="/write" element={currentUser ? <Write /> : <Login />}>
         </Route>
-        <Route exact path="/settings" element={currentUser ? <Settings /> : <Login />}>
+        <Route  path="/settings" element={currentUser ? <Settings /> : <Login />}>
         </Route>
-        <Route exact path="/single" element={currentUser ? <Single /> : <Login />}>
+        <Route  path="/single" element={currentUser ? <Single /> : <Login />}>
         </Route>
       </Routes>
     </Router>
