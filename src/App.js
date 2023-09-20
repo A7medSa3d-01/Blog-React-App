@@ -15,6 +15,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />}>
         </Route>
+        <Route exact path="/Blog-React-App" element={<HomePage />}>
+        </Route>
         <Route exact path="/posts" element={<HomePage />}>
         </Route>
         <Route exact path="/register" element={currentUser ? <HomePage /> : <Register />}>
